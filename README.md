@@ -1,26 +1,46 @@
-# Huawei LLM Agent Competition: Adaptive Hardware-Agnostic Tool Calling Router Framework
-
-This repository documents the production-grade deployment architecture developed for the Huawei LLM Agent Development Competition. The project implements a lightweight, zero-dependency tool-calling orchestration framework engineered around the Qwen3 large language model family, featuring native multi-platform hardware acceleration mapping and object-oriented dynamic interface routing.
-
-## Project Vision and Engineering Constraints
-Modern enterprise agent toolkits (e.g., LangChain) often introduce substantial token inflation, framework overhead, and excessive network latencies, rendering them unsuited for latency-critical or edge deployment environments. This system addresses these limitations by achieving sub-millisecond function-routing processing speeds through compiled regular expression pattern matching over structured XML tags, backed by strict Object-Oriented Programming (OOP) engineering boundaries.
-
-## Production-Ready Directory Structure
-The workspace is stratified into independent lifecycle domains to optimize maintainability and facilitate modular code inspections:
-```text
 Huawei-LLM-Agent-Router/
-├── README.md                      # Architectural overview and platform deployment specifications
-├── main.py                        # Interactive runtime assessment pipeline
-├── agent.py                       # Runtime CustomAgent core and multi-hardware driver abstract layer
-├── detect.py                      # Automated diagnostic dependency and runtime validator
-├── .vscode/                       # Standardized workspace parameters and compilation settings
+├── .gitignore                     # Prevents tracking compiled bytes and OS metadata
+├── README.md                      # Unified master repository documentation
+├── detect.py                      # Pre-flight hardware and dependency validator
+├── environment.yaml               # Conda environment manifest for cluster replication
+├── main.py                        # Standalone interactive CLI user interface loop
+├── .vscode/                       # Standardized workspace configurations
 │   ├── c_cpp_properties.json
 │   ├── launch.json
 │   └── settings.json
-├── config/                        # Decoupled business rules and tool schema catalog
-│   └── tools_v0.json              # Declarative JSON-Schema specifications for tool entities
-├── tests/                         # Automated verification and isolation scripts
-│   └── test_agent_detection.py    # Declarative regression unit testing ledger
-└── scripts/                       # Cross-platform orchestration automation wrappers
-    ├── start.sh                   # POSIX-compliant automated environment initialization
-    └── Lanuch_main.command       # macOS double-click deployment shortcut
+├── config/                        # Schema catalogs and declarations
+│   └── tools_v0.json              # Structured hierarchical intent system definitions
+├── core/                          # Core execution engines and agent bindings
+│   ├── agent.py                   # High-performance adaptive hardware routing layer
+│   └── demo_agent.py              # Baseline architecture (Direct vs. Hierarchical)
+├── data/                          # Unified evaluation and fine-tuning datasets
+│   ├── train_data.json            # Base training data payload
+│   ├── train_data_50.json         # Partitioned training data slice
+│   ├── smoke_test_100.json        # Base smoke test definition matrix
+│   ├── single_turn_smoke_test.jsonl # Normalized from 'µ•¬÷-√∞—Ã≤‚ ‘ºØ.jsonl'
+│   ├── multi_turn_smoke_test.jsonl  # Normalized from '∂‡¬÷-√∞—Ã≤‚ ‘ºØ.jsonl'
+│   ├── eval_train.jsonl           # Structured validation training vectors
+│   ├── eval_test.jsonl            # Comprehensive test dataset
+│   ├── eval_test_small10.jsonl    # Accelerated validation testing slice
+│   └── hard_examples.jsonl        # Discovered low-confidence exception data
+├── evaluation/                    # Analytics engines and verification runners
+│   ├── evaluate_agent.py          # Master analytical evaluation pipeline execution harness
+│   ├── bash_run.py                # Batch dataset testing pipeline orchestration entry
+│   ├── analyze_eval_csv.py        # Log processor and function alias suggestion engine
+│   ├── analyze_failures.py        # Failure classification engine (mismatches vs. missing)
+│   └── export_hard_examples.py    # Discrepancy isolation and extraction script
+├── generators/                    # Synthetic data generation and utility engines
+│   ├── Generate.py                # Single-turn procedural data synthesis engine
+│   ├── Generate2.py               # Complex multi-tier hierarchical prompt generator
+│   └── Study.py                   # Sandbox utility and script validation suite
+├── logs/                          # System telemetry and validation benchmarks
+│   ├── eval_results.json          # Master run performance metrics matrix
+│   ├── eval_results.csv           # Tabular formatting of current validation round
+│   ├── eval_20251022_211206.log   # Raw system trace logs
+│   ├── eval_run_20251022_214904.log # Low-level checkpoint memory shards loading trace
+│   ├── eval_details_20251027_213114.csv
+│   └── eval_details_20251027_223945.csv
+└── scripts/                       # Native environment execution tooling
+    ├── download.sh                # Automated ModelScope model shard ingestion script
+    ├── start.sh                   # POSIX system background execution engine
+    └── Lanuch_main.command       # macOS Finder automation executable
