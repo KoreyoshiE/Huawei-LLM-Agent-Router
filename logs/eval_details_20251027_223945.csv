@@ -1,0 +1,64 @@
+idx,id,user_text,raw_output,predicted,expected,elapsed
+0,258ce28b-a3cd-5c99-a64f-1887b0f5ea2e,帮我把蓝牙打开一下，谢谢,"<tool>ConnectBlueTooth(DeviceType=""手机"", ActionType=True)</tool>","ConnectBlueTooth(DeviceType=""手机"", ActionType=True)",BlueToothOnOff(ActionType=True),1.1692781448364258
+1,a821fcef-72df-5791-86f5-90fee33fddc7,帮我看看周围有没有能连的蓝牙音箱,<tool>ScanBluetoothDevices()</tool>,ScanBluetoothDevices(),"SearchBlueTooth(DeviceType=""音箱"")",0.44936490058898926
+2,fa805c06-1ef7-5ce8-90db-bbbb3c0b418a,帮我把车载蓝牙断开一下，谢谢,<tool>DisconnectCarBluetooth()</tool>,DisconnectCarBluetooth(),"ConnectBlueTooth(DeviceType=""车载"", ActionType=False)",0.4474794864654541
+3,2f9290a3-8c58-51ff-856f-e9fee92fce6f,把WiFi关了,<tool>TurnOffWiFi()</tool>,TurnOffWiFi(),WlanOnOff(ActionType=False),0.4462442398071289
+4,b15c090c-0a2a-5d2b-84c4-c3c23fe80b27,帮我看看周围有什么WiFi能用,<tool>ScanWiFi()</tool>,ScanWiFi(),SearchWlan(),0.4159560203552246
+5,19eb77d3-eef6-5f79-a1de-6d7408edeae7,我手机快没流量了，帮我把移动网络关掉吧,<tool>DisableMobileNetwork()</tool>,DisableMobileNetwork(),MobileDataOnOff(ActionType=False),0.44985437393188477
+6,b825a584-3416-5bca-a45a-ec65147a5b28,帮我打开手机的热点功能，朋友要用我流量,"<tool>OpenHotspot(DeviceType=""手机"", Enable=True)</tool>","OpenHotspot(DeviceType=""手机"", Enable=True)",HotShotOnOff(ActionType=True),0.741940975189209
+7,c4da59cf-b344-5319-9fba-646df73ab5c0,手机快没电了，帮我看看还剩多少电量？,<tool>CheckPhoneBatteryLevel</tool>,CheckPhoneBatteryLevel,CheckBatteryLevel(),0.5111043453216553
+8,4d674371-3801-51b9-8c0b-d6d20917e1a0,帮我查一下最近7天哪些APP最耗电，要按从高到低排序,"<tool>CheckAppPowerConsumption(TimeRange=""最近7天"", SortOrder=""从高到低"")</tool>","CheckAppPowerConsumption(TimeRange=""最近7天"", SortOrder=""从高到低"")","CheckBatteryConsumptionRank(TimeRange=""最近7天"", AnomalyDetection=False, SortBy=""DESC"")",1.163529872894287
+9,bfc7a323-afe7-5167-b4a6-9c58c20665f0,手机快没电了，帮我打开省电模式,"<tool>EnablePowerSaverMode(DeviceType=""手机"")</tool>","EnablePowerSaverMode(DeviceType=""手机"")",BatterySavingMode(ActionType=True),0.7394895553588867
+10,c7eeb89e-ef79-58f6-9d9e-b343a54a0744,手机卡死了，帮我强制重启一下,"<tool>ForceRestartPhone(DeviceType=""手机"")</tool>","ForceRestartPhone(DeviceType=""手机"")","Reboot(DeviceType=""手机"")",0.6531820297241211
+11,e16f68a6-6b22-55aa-8bee-5ae5bbae4216,小艺小艺，麻烦帮我把家里的智能音箱关掉,<tool>TurnOffSmartSpeaker()</tool>,TurnOffSmartSpeaker(),"ShutDown(DeviceType=""音箱"")",0.4882237911224365
+12,4c9e36dd-98a8-5687-a937-a60dd9c32589,小艺小艺，我的手机屏幕一直亮着太费电了，能不能帮我锁屏休息一会儿？,"<tool>LockScreen(DeviceType=""手机"", Duration=""10分钟"")</tool>","LockScreen(DeviceType=""手机"", Duration=""10分钟"")","Sleep(DeviceType=""手机"")",0.8590378761291504
+13,bc7f6756-2e41-59de-ba53-5fb4230c3899,能不能帮我把手机通话音量调高一点？,"<tool>AdjustPhoneVolume(Adjustment=""increase"")</tool>","AdjustPhoneVolume(Adjustment=""increase"")","ControlSound(VolumeType=""通话音量"", ActionType=""增加"", Percentage=15)",0.7234842777252197
+14,e6ec6359-cfc2-51e8-a070-6cf4bceb1290,手机震动太吵了，帮我关掉振动模式吧,<tool>SetPhoneVibration(Enable=False)</tool>,SetPhoneVibration(Enable=False),VibrationModeOnOff(ActionType=False),0.6154859066009521
+15,e47baa33-40ca-509d-9257-99fbb6f38370,帮我打开勿扰模式，谢谢！,<tool>EnableDoNotDisturbMode()</tool>,EnableDoNotDisturbMode(),QuietModeOnOff(ActionType=True),0.5501549243927002
+16,c2706715-2312-5688-b41e-c9a68760e159,帮我看下平板的屏幕亮度现在是多少？,"<tool>GetDeviceScreenBrightness(DeviceType=""平板"")</tool>","GetDeviceScreenBrightness(DeviceType=""平板"")","CheckLuminance(DeviceType=""平板屏幕"")",0.676642656326294
+17,a15e5465-d29b-59eb-9602-6e7bf788d0af,帮我把平板屏幕的亮度调到60%吧，有点刺眼,"<tool>AdjustScreenBrightness(DeviceType=""平板"", BrightnessLevel=60)</tool>","AdjustScreenBrightness(DeviceType=""平板"", BrightnessLevel=60)","ControlLuminance(DeviceType=""平板屏幕"", ActionType=""调到"", Percentage=60)",0.8998775482177734
+18,5e70a667-5313-563d-a30b-c1053a9c0e50,帮我把手机的自动亮度调节关掉，现在太亮了,<tool>AdjustPhoneBrightness(EnableAutoBrightness=False)</tool>,AdjustPhoneBrightness(EnableAutoBrightness=False),"AutoLuminanceOnOff(DeviceType=""手机屏幕"", ActionType=False)",0.659703254699707
+19,3f96cf79-4b93-5fb2-b6c6-b2c2fb6549c4,帮我看下显示器现在的对比度是多少？,<tool>GetMonitorContrast()</tool>,GetMonitorContrast(),"CheckContrast(DeviceType=""显示器"")",0.4663543701171875
+20,1e113efe-5595-5758-84f3-1a08ad50afcd,帮我把电脑显示器的对比度调到60%,<tool>AdjustDisplayContrast(ContrastValue=60)</tool>,AdjustDisplayContrast(ContrastValue=60),"SwitchContrast(DeviceType=""电脑屏幕"", ActionType=""增强"", Percentage=60)",0.7725920677185059
+21,ebe635d5-3119-52f4-8667-24fc4052cc92,帮我把手机主题改成暗色的，晚上看太刺眼了,"<tool>ChangePhoneTheme(ColorTheme=""暗色"")</tool>","ChangePhoneTheme(ColorTheme=""暗色"")","SetSystemTheme(ThemeType=""暗色模式"")",0.6992297172546387
+22,81dc1d5f-527d-58fa-9d17-fe2038a50486,帮我看看现在用的是啥字体啊？,"目前我无法直接查看或获取你所使用的字体信息，因为这需要访问你的设备或浏览器的显示设置。如果你希望了解当前使用的字体，可以尝试以下方法：
+
+1. 在浏览器中打开开发者工具（F12），查看网页元素的样式（CSS）中是否指定了字体。",,CheckFont(),2.7527549266815186
+23,965be042-2fa8-5ab0-a9f2-289bef95d44a,帮我把微信的字体调到最大号，看着清楚点,"目前我无法直接操作你的微信应用或修改其字体设置。建议你通过微信的设置界面手动调整字体大小：
+
+1. 打开微信，点击右下角的「我」。
+2. 进入「设置」。
+3. 选择「通用」。
+4. 找到",,"SwitchFontSize(ActionType=""设置"", AdjustLevel=""最大"", AppName=""微信"")",2.8276987075805664
+24,c987f3b6-6d8a-5a40-b1e6-470f6ded7fe9,能把微信的字体调粗一点吗？看起来更醒目些,"目前无法直接修改微信的字体大小或样式，微信的字体设置是固定的，且由其内部系统控制。建议您通过微信的设置功能调整阅读体验，例如：
+
+1. 打开微信 → 我 → 设置 → 通用 → 显示 → 调整字体大小（如",,"SwitchFontWeight(ActionType=""调整"", FontWeight=""粗体"", AppName=""微信"")",2.8047034740448
+25,f8ac8e46-a371-546a-a588-caf0fdd17f87,能把微信聊天的字体换成楷体吗？感觉现在的看起来不太舒服,"目前微信本身不支持直接修改聊天界面的字体为楷体或其他自定义字体。微信的字体设置是固定的，由其开发团队统一控制，用户无法通过常规设置或第三方工具更改聊天内容的显示字体。
+
+如果你觉得当前字体阅读不适，可以尝试以下方法改善体验：
+
+1.",,"ControlFontType(FontType=""楷体"", ActionType=""更换"", AppName=""微信"")",2.781090259552002
+26,6034ec2f-403f-596e-999d-b24e1d670796,帮我看看现在用的什么输入法,<tool>GetCurrentInputMethod()</tool>,GetCurrentInputMethod(),CheckInputMethod(),0.47246408462524414
+27,e53da40c-4c74-5e37-9adf-1a0ab373404b,能不能帮我把微信里的输入法改成百度输入法？现在用的是系统自带的，打字不太顺手。,目前我无法直接修改微信中的输入法设置，因为这需要在微信应用内部进行操作，且涉及用户设备的输入法配置。建议您在手机的系统设置中，将默认输入法设置为百度输入法，然后在微信中选择该输入法即可。如果需要，我可以提供,,"SwitchInputMethod(AppName=""微信"", InputMethodName=""百度输入法"", ActionType=""切换"")",2.8180177211761475
+28,7c0bb589-3eb7-57ab-83d9-6bdcd6f1a70f,把微信的语言设置改成英文吧，我朋友看不懂中文,"<tool>ChangeWeChatLanguage(Language=""English"")</tool>","ChangeWeChatLanguage(Language=""English"")","SwitchLanguage(AppName=""微信"", LanguageType=""英文"", ActionType=""更改"")",0.6902608871459961
+29,6853b86f-2842-5958-ad07-586f78c57b50,我的手机需要开启飞行模式了，麻烦帮我处理一下,"<tool>EnableFlightMode(DeviceType=""手机"")</tool>","EnableFlightMode(DeviceType=""手机"")",AirplaneModeOnOff(ActionType=True),0.6387112140655518
+30,7176070d-6c52-5b14-baad-5190f8cf0660,帮我看看电脑有没有可用的系统更新，谢谢！,<tool>CheckSystemUpdates()</tool>,CheckSystemUpdates(),CheckSystemUpdate(),0.4314463138580322
+31,15c757b4-d111-55ab-970b-0e674a2f24d9,电脑最近有点卡，能帮我看看系统有没有可用的升级？,<tool>CheckSystemUpdates()</tool>,CheckSystemUpdates(),"SystemUpdate(ActionType=""升级"")",0.4429605007171631
+32,c2d18e15-f99e-5bbb-87e1-97f85b5100be,小张我想听周杰伦的歌，帮我开一下音乐软件吧,"<tool>OpenMusicApp(Artist=""周杰伦"", Action=""播放"")</tool>","OpenMusicApp(Artist=""周杰伦"", Action=""播放"")","SwitchApp(AppName=""QQ音乐"")",0.9204926490783691
+33,a75b888d-ecd0-51b5-ae93-b4083794e0a6,帮我用微信给李经理打个电话，用卡1，开免提模式,"<tool>MakePhoneCall(WeChat=True, Contact=""李经理"", Card=1, HandsFree=True)</tool>","MakePhoneCall(WeChat=True, Contact=""李经理"", Card=1, HandsFree=True)","Call(AppName=""微信"", Contact=""李经理"", PhoneCard=""卡1"", Mode=""免提"")",1.1650173664093018
+34,58610658-42af-5f27-b268-41014e0932b3,帮我查一下王总的联系方式,我无法提供个人的联系方式，包括王总的联系方式。如果您有其他问题或需要帮助，请告诉我！,,"CheckContact(Contact=""王总"")",1.0614542961120605
+35,dae77761-73b9-5d2d-a929-f6070c127a22,“帮我用免提接一下这个电话”,<tool>EnableHandsFreeMode()</tool>,EnableHandsFreeMode(),"AnswerCall(ActionType=True, Mode=""免提"")",0.4913644790649414
+36,161f1b6a-c04f-54fe-9813-d8fcd99bb9ed,帮我给王总发个微信，说下午的会议改到3点了，用我工作卡发,"<tool>SendWeChatMessage(Recipient=""王总"", Content=""下午的会议改到3点了，我用工作卡发。"")</tool>","SendWeChatMessage(Recipient=""王总"", Content=""下午的会议改到3点了，我用工作卡发。"")","SendMessage(AppName=""微信"", Contact=""王总"", PhoneCard=""工作卡"", Content=""下午的会议改到3点"")",1.5120010375976562
+37,d1ec4179-b4a9-59a6-ba32-6745c45ba536,"帮我用网易邮箱给客户经理李总发封邮件，内容是""关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见""","<tool>SendEmail(To=""李总@netease.com"", Subject=""关于下季度合作方案的初步讨论"", Content=""关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见"", Attachment=""合作方案提案.docx"")</tool>","SendEmail(Content=""关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见"")","SendEmail(AppName=""网易邮箱"", Contact=""李总"", Content=""关于下季度合作方案的初步讨论，附件是详细提案，请查收后尽快反馈意见"")",2.6952788829803467
+38,80fe524a-2ea2-52bc-b8f4-0a22342680b8,帮我在Outlook里看看昨天收到的标星邮件,"<tool>SearchOutlookEmail(Starred=True, Date=""昨天"")</tool>","SearchOutlookEmail(Starred=True, Date=""昨天"")","CheckEmail(AppName=""Outlook"", Folder=""星标邮件"", TimeRange=""昨天"")",0.8967745304107666
+39,7951d325-8ca7-5406-ac56-e3a1528f65e4,明早8点记得提醒我开项目例会,"<tool>SetReminder(Time=""08:00"", Event=""开项目例会"")</tool>","SetReminder(Time=""08:00"", Event=""开项目例会"")","CreateAlarm(Time=""明天早上8点"", Content=""项目例会"")",1.059842824935913
+40,71d1acad-3d9f-5a56-848b-5ddde6206d54,帮我看看明天上午9点叫我开会的闹钟开了没有,"<tool>CheckAlarm(Time=""09:00"", Day=""明天"", Action=""查询"")</tool>","CheckAlarm(Time=""09:00"")","CheckAlarm(Time=""明天上午9点"", Content=""开会"", RangeType=""明天"", State=""已开启"")",1.109391689300537
+41,ef6ebf81-29d5-5a30-8c89-26d42c7ae751,帮我取消明天早上8点的会议提醒,"<tool>CancelMeetingReminder(Time=""08:00"", Date=""明天"")</tool>","CancelMeetingReminder(Time=""08:00"", Date=""明天"")","DeleteAlarm(Time=""明天8:00"", Content=""会议"", RangeType=""明天"")",0.9685313701629639
+42,00b21a1f-921a-5b6e-9776-fcd438cfb85c,"早上开会时老板布置了几个新任务，能帮我在WPS里创建一份标题为""Q3项目计划""的工作笔记吗？内容就写""1.市场调研 2.竞品分析 3.方案设计""，最好能在明天下午三点提醒我查看","<tool>CreateWorkNote(Title=""Q3项目计划"", Content=""1.市场调研 2.竞品分析 3.方案设计"", ReminderTime=""明天 15:00"")</tool>","CreateWorkNote(Title=""Q3项目计划"", Content=""1.市场调研 2.竞品分析 3.方案设计"", ReminderTime=""明天 15:00"")","CreateNote(AppName=""WPS"", Title=""Q3项目计划"", Content=""1.市场调研 2.竞品分析 3.方案设计"", Type=""工作笔记"", ReminderTime=""明天15:00"")",2.0359227657318115
+43,9f4fdb0b-a49f-5b77-8aaf-5092ddecde20,"把这段中文翻译成英文：""今天的天气真好，适合外出散步。""","""The weather today is really great, perfect for going out for a walk.""",,"Translate(Content=""今天的天气真好，适合外出散步。"", SourceLanguage=""中文"", TargetLanguage=""英文"")",0.7037720680236816
+44,61bd1f34-79c4-5f11-8f59-29397c33ef87,"您好，麻烦帮我截取当前正在使用的浏览器窗口画面，并保存在桌面""工作资料""文件夹里，谢谢！","<tool>ScreenshotBrowserWindow(SavePath=""桌面\\工作资料"")</tool>","ScreenshotBrowserWindow(SavePath=""桌面\\工作资料"")","CaptureScreenshot(CaptureArea=""当前窗口"", SavePath=""~/Desktop/工作资料"")",0.8161356449127197
+45,bc147a7f-9f42-5865-8f4c-c4f91731e009,电脑有点卡，能帮我刷新下桌面吗？,<tool>RefreshDesktop()</tool>,RefreshDesktop(),Refresh(),0.389538049697876
+46,5487e07c-1bcc-5e6c-bd74-a9d787cb6aed,可以麻烦你帮我把任务管理器调出来吗？我需要查一下后台进程,<tool>OpenTaskManager()</tool>,OpenTaskManager(),TaskManagerOnOff(ActionType=True),0.43829846382141113
+47,61784233-5e6f-5504-af66-229e0f0f03bb,帮我把手机的分屏模式打开吧，我需要同时看两个应用,"<tool>EnableSplitScreenMode(DeviceType=""手机"", ActionType=True)</tool>","EnableSplitScreenMode(DeviceType=""手机"", ActionType=True)",MultipleWindowModeOnOff(ActionType=True),0.7929720878601074
+48,64c5f7c3-28bd-5b86-a322-33e905a80665,帮我把电脑的回收站彻底清空一下,"<tool>EmptyRecycleBin(Computer=""Windows"")</tool>","EmptyRecycleBin(Computer=""Windows"")",EmptyBin(),0.6984157562255859
+49,0a0c8b48-c3b7-56c3-8e06-6c2ac4277a31,帮我查一下明天北京的天气预报,"<tool>GetWeather(City=""北京"", Date=""明天"")</tool>","GetWeather(City=""北京"", Date=""明天"")","Search(Content=""明天 北京 天气预报"")",0.7938601970672607
