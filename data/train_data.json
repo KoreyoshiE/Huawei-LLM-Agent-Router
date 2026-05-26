@@ -1,0 +1,1271 @@
+[
+  {
+    "id": "27a98e50-3c78-4bf0-a0d7-6fb2bb3c6afb",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "音量降低到43%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=43)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "f5038139-a96c-4520-b893-42d872398867",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我把打印机蓝牙连上"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"打印机\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "e18c7015-ef39-4270-9f03-a1d5b76792e2",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启手机"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "9e4d94bb-2170-4a7c-bedf-505229111a07",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我重启一下设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "b06f726e-e4e2-4263-8d8a-1dd3a85f8e34",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我打开音乐"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"音乐\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "1aaba882-7488-4ac4-9819-90a2c94d313d",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "断开打印机的蓝牙"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"打印机\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "bf6880c8-d3d8-4f9b-a228-5fe1e693859a",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启手机"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "0c1350d3-ae87-4e89-b097-33273e0a7d2e",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "音量降低到1%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=1)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "c412cdc1-ebeb-4535-b89d-9c77a7181497",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "把音量调到9%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=9)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "1c214aed-4329-4eac-bd92-9cbda1759b2b",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我重启一下设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "c2931755-809c-4b4b-a210-c40b09d54e07",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "启动QQ"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"QQ\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "9236d710-336d-40f6-ab09-e6a094daa57b",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "音量降低到22%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=22)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "5e412a70-44c1-4c10-8e9e-adf9c531b18b",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "启动浏览器"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"浏览器\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "9fcad270-9e80-47ac-8a06-fe09bc8f1e5d",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "把音量调到100%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=100)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "06ecb9e9-716e-4f5f-b413-de467be95321",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启手机"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "b44e762b-5c94-41bc-83f6-a2c89bdad535",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "把音量调到87%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=87)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "22efbc78-9415-410a-a7c9-748d43d17eec",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "启动日历"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"日历\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "5d5e150a-f818-4af8-8589-94245f21f72e",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启手机"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "79828ae3-bdd2-4b33-873d-44574116e72b",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我把耳机蓝牙连上"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "49894664-a7e3-4152-b62d-b39678b3fc3d",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启手机"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "3ef68bd0-4e70-412c-8cb3-409fec670aef",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启手机"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "f914125f-3e0f-4f58-852e-e9fc14f416bf",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我打开QQ"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"QQ\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "0d0dbbff-f7b1-499b-ab7e-72c15440c9d7",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "启动邮件"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"邮件\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "6d67cae9-afa9-478f-9441-73fcc3b78a0a",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "音量降低到30%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=30)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "0af7052e-30bf-48ae-a3be-06643b84e85a",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启手机"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "fcb22f02-6217-4707-9aa2-2e6006f76663",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启手机"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "fe67dcfe-5771-4d56-9e90-9b6231a10546",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我重启一下设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "6a473db5-9275-4b04-a032-547a0ec0e2ba",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启手机"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "f8d0f0d5-079a-45f4-9f6a-aebf1d45ddba",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我重启一下设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "36787d72-a37a-4503-be68-c07b4120c29c",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "把音量调到81%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=81)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "c81c0b79-89f2-44d1-b604-88f5c6bc0fa4",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我把打印机蓝牙连上"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"打印机\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "a32edfc9-5a22-434b-930f-8d490a739727",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我重启一下设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "abb6becc-c0b5-41c5-ba23-dc9d0eaf2bca",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我打开微信"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"微信\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "db25dac2-5806-4bc2-87c3-7aeb4948599e",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我重启一下设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "1e8d7591-e7b1-4d29-b524-3e5dc9fcbc14",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我打开邮件"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"邮件\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "5886b2d9-48b1-46a5-b335-9bc8debc1b21",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我打开微信"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"微信\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "f8c1482d-465c-47dd-b573-0041f84b02a5",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我打开音乐"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"音乐\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "9572db34-ee8c-461b-915c-ce2221f79cd6",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "启动QQ"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"QQ\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "f5887c60-c9a8-43f1-82a5-3c6c897c57e3",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "把音量调到46%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=46)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "e2f013fa-6331-4f72-94d3-0360de7a94f6",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "断开手机的蓝牙"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"手机\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "44631995-abf0-4385-ba90-7f35f4929f24",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我打开浏览器"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"浏览器\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "97161785-3a9e-4479-9e26-3231af7d43d1",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启手机"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "7a3d167e-9f7d-4e23-a868-0ee05ba50031",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "断开车载的蓝牙"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "8c14736d-c755-4dff-ab01-02805ea21484",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "启动微信"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"微信\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "46ec0e22-cd07-4c44-b686-ef79248bc2b3",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "音量降低到70%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=70)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "d2910a3b-c71e-473e-9962-64f7e68dc925",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启手机"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "6aca286b-30cc-44d3-adeb-88ea50a138f6",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我重启一下设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "e95fed7d-368e-4110-a446-ed77a59bad2a",
+    "intent_name": "OpenApp",
+    "intent_description": "打开指定应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我打开浏览器"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"浏览器\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "7976aaf2-61d5-4d90-be6a-4459200a8f73",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我重启一下设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "1c080529-8a39-4363-9311-960f80dc1c4b",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我把音箱蓝牙连上"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"音箱\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  }
+]

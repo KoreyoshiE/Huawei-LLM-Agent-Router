@@ -1,0 +1,1313 @@
+[
+  {
+    "id": "fbff02f1-c3f5-40fd-801b-162bdaef439c",
+    "intent_name": "SetNotification",
+    "intent_description": "通知管理",
+    "slots": [
+      "AppName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "开启 音乐 通知"
+      },
+      {
+        "role": "assistant",
+        "content": "SetNotification(AppName=\"音乐\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetNotification",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "cb0711ac-129b-4e2b-9257-234cf0782de9",
+    "intent_name": "SetAppPermission",
+    "intent_description": "设置应用权限",
+    "slots": [
+      "AppName",
+      "Permission",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "禁止 浏览器 使用 相机"
+      },
+      {
+        "role": "assistant",
+        "content": "SetAppPermission(AppName=\"浏览器\", Permission=\"相机\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetAppPermission",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "0ed257ad-9f5d-424e-abae-0a02648266e4",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "f754375c-3aef-444a-b22b-75adb5f84814",
+    "intent_name": "SetLockScreen",
+    "intent_description": "锁屏设置",
+    "slots": [
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "启用锁屏"
+      },
+      {
+        "role": "assistant",
+        "content": "SetLockScreen(ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetLockScreen",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "e7d28ab7-00db-4f9d-8e3e-4e4556048e37",
+    "intent_name": "SetLockScreen",
+    "intent_description": "锁屏设置",
+    "slots": [
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "启用锁屏"
+      },
+      {
+        "role": "assistant",
+        "content": "SetLockScreen(ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetLockScreen",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "e314b8c3-4df6-4956-9e25-53c87390226c",
+    "intent_name": "SetPowerMode",
+    "intent_description": "设置电源模式",
+    "slots": [
+      "Mode"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "切换到 平衡 模式"
+      },
+      {
+        "role": "assistant",
+        "content": "SetPowerMode(Mode=\"平衡\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetPowerMode",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "f47e65e7-40be-4277-8f72-50784b0cc209",
+    "intent_name": "SetVPN",
+    "intent_description": "开启或关闭 VPN",
+    "slots": [
+      "VPNName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "开启 VPN 公司VPN"
+      },
+      {
+        "role": "assistant",
+        "content": "SetVPN(VPNName=\"公司VPN\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetVPN",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "21eb9a1f-c7e4-4ecb-bf45-6479718e6689",
+    "intent_name": "SetVPN",
+    "intent_description": "开启或关闭 VPN",
+    "slots": [
+      "VPNName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "开启 VPN 公司VPN"
+      },
+      {
+        "role": "assistant",
+        "content": "SetVPN(VPNName=\"公司VPN\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetVPN",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "f35f8506-0534-4688-83cd-d0a54f4664be",
+    "intent_name": "SetNotification",
+    "intent_description": "通知管理",
+    "slots": [
+      "AppName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "开启 微信 通知"
+      },
+      {
+        "role": "assistant",
+        "content": "SetNotification(AppName=\"微信\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetNotification",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "0807fe32-0235-41bd-9fc1-7c3266f99f30",
+    "intent_name": "SetNotification",
+    "intent_description": "通知管理",
+    "slots": [
+      "AppName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "关闭 QQ 通知"
+      },
+      {
+        "role": "assistant",
+        "content": "SetNotification(AppName=\"QQ\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetNotification",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "5c1453fb-70a3-43f8-b55d-e016b6138a54",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我把车载蓝牙连上"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "881b3f9d-5609-4b9d-a3eb-cda713cae17c",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我重启一下"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "6bc80fd0-c70f-4ef4-8391-14423d3fa6ef",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "3470fdfe-1dac-4055-acba-8b0de53a2df3",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我重启一下"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "10050345-77a9-4222-944c-e77d5cb98c3b",
+    "intent_name": "SetPowerMode",
+    "intent_description": "设置电源模式",
+    "slots": [
+      "Mode"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "开启 节能 电源模式"
+      },
+      {
+        "role": "assistant",
+        "content": "SetPowerMode(Mode=\"节能\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetPowerMode",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "be1768f2-f6a1-41a2-ac01-41c76324c088",
+    "intent_name": "AdjustBrightness",
+    "intent_description": "调整屏幕亮度",
+    "slots": [
+      "BrightnessLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "降低屏幕亮度到 63%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustBrightness(BrightnessLevel=63)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustBrightness",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "e38c92e8-59b1-460a-ab73-1ee0d95574cd",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "音量降低到 79%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=79)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "603ab07b-f967-41ed-b121-82f410f792e6",
+    "intent_name": "ConnectWiFi",
+    "intent_description": "连接指定 WiFi",
+    "slots": [
+      "SSID",
+      "Password"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我连接WiFi OfficeWiFi"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectWiFi(SSID=\"OfficeWiFi\", Password=\"28839108\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectWiFi",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "8e6d9594-308c-4649-9b74-237b723fa280",
+    "intent_name": "SetLockScreen",
+    "intent_description": "锁屏设置",
+    "slots": [
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "禁用锁屏"
+      },
+      {
+        "role": "assistant",
+        "content": "SetLockScreen(ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetLockScreen",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "36d63b6f-d640-475a-a751-d0fbeb746248",
+    "intent_name": "SetVPN",
+    "intent_description": "开启或关闭 VPN",
+    "slots": [
+      "VPNName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "开启 VPN 学校VPN"
+      },
+      {
+        "role": "assistant",
+        "content": "SetVPN(VPNName=\"学校VPN\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetVPN",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "ac5737b6-e8d6-43fd-a989-974aa58d2dd1",
+    "intent_name": "AdjustBrightness",
+    "intent_description": "调整屏幕亮度",
+    "slots": [
+      "BrightnessLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "降低屏幕亮度到 47%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustBrightness(BrightnessLevel=47)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustBrightness",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "48f77ab1-e43b-4fd0-912b-59436f69e231",
+    "intent_name": "SetNotification",
+    "intent_description": "通知管理",
+    "slots": [
+      "AppName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "关闭 日历 通知"
+      },
+      {
+        "role": "assistant",
+        "content": "SetNotification(AppName=\"日历\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetNotification",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "9149691b-805f-4ce1-be67-ecae112b7126",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "断开打印机的蓝牙"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"打印机\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "5afe3bd7-abe4-4536-9c70-8b79727c7fe9",
+    "intent_name": "SetVPN",
+    "intent_description": "开启或关闭 VPN",
+    "slots": [
+      "VPNName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "关闭 VPN 学校VPN"
+      },
+      {
+        "role": "assistant",
+        "content": "SetVPN(VPNName=\"学校VPN\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetVPN",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "f824f019-4bd8-4edd-96e7-887990eee787",
+    "intent_name": "SetAppPermission",
+    "intent_description": "设置应用权限",
+    "slots": [
+      "AppName",
+      "Permission",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "允许 微信 使用 麦克风"
+      },
+      {
+        "role": "assistant",
+        "content": "SetAppPermission(AppName=\"微信\", Permission=\"麦克风\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetAppPermission",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "66e211b4-3c17-4681-9ef1-3bb0846f3309",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我把车载蓝牙连上"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "b38f69c3-5b21-4f78-945c-a98bb2856915",
+    "intent_name": "SetAppPermission",
+    "intent_description": "设置应用权限",
+    "slots": [
+      "AppName",
+      "Permission",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "禁止 日历 使用 相机"
+      },
+      {
+        "role": "assistant",
+        "content": "SetAppPermission(AppName=\"日历\", Permission=\"相机\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetAppPermission",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "24d364a2-9e14-44d6-8cf2-1cfedd087970",
+    "intent_name": "SetNotification",
+    "intent_description": "通知管理",
+    "slots": [
+      "AppName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "开启 邮件 通知"
+      },
+      {
+        "role": "assistant",
+        "content": "SetNotification(AppName=\"邮件\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetNotification",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "8f40ec5e-8cc5-4c3a-8850-0b0923dd5080",
+    "intent_name": "CheckBatteryHealth",
+    "intent_description": "检查电池健康状态",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我看看电池状况"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryHealth()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "CheckBatteryHealth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "7689cde9-f00e-48b5-9880-16843ef36438",
+    "intent_name": "SetVPN",
+    "intent_description": "开启或关闭 VPN",
+    "slots": [
+      "VPNName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "关闭 VPN 学校VPN"
+      },
+      {
+        "role": "assistant",
+        "content": "SetVPN(VPNName=\"学校VPN\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetVPN",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "2687420c-002f-4187-9560-9578dfa84da4",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "b50dadeb-93c0-4793-8d6b-86ac274d4b14",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "把音量调到 83%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=83)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "eda24c40-a750-4024-938f-1c12ba60fd1d",
+    "intent_name": "UpdateSystem",
+    "intent_description": "系统更新",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "更新系统"
+      },
+      {
+        "role": "assistant",
+        "content": "UpdateSystem()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "UpdateSystem",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "82e75663-e293-4513-aa29-354b2f089d05",
+    "intent_name": "SetAppPermission",
+    "intent_description": "设置应用权限",
+    "slots": [
+      "AppName",
+      "Permission",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "禁止 浏览器 使用 位置"
+      },
+      {
+        "role": "assistant",
+        "content": "SetAppPermission(AppName=\"浏览器\", Permission=\"位置\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetAppPermission",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "cd9228f7-0ee2-40fe-9752-4717229e7ef9",
+    "intent_name": "SetNotification",
+    "intent_description": "通知管理",
+    "slots": [
+      "AppName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "关闭 音乐 通知"
+      },
+      {
+        "role": "assistant",
+        "content": "SetNotification(AppName=\"音乐\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetNotification",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "51d6f0ff-972f-4843-b61d-8849cbc0ab35",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我重启一下"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "512acf9d-cb5b-4e98-bdf3-5e2a99efc9b9",
+    "intent_name": "RestartDevice",
+    "intent_description": "重启设备",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "重启设备"
+      },
+      {
+        "role": "assistant",
+        "content": "RestartDevice()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "RestartDevice",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "5ba848ab-90af-43a4-a0af-4076ca4b9d38",
+    "intent_name": "AdjustBrightness",
+    "intent_description": "调整屏幕亮度",
+    "slots": [
+      "BrightnessLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "降低屏幕亮度到 59%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustBrightness(BrightnessLevel=59)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustBrightness",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "7d403eb9-5ac6-4d64-a7f7-919a2690b19b",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我把键盘蓝牙连上"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"键盘\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "7180b527-b041-4c3d-b96a-5db53a067a62",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "断开车载的蓝牙"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "4f367096-039a-483b-86e8-12dd555eedbc",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "音量降低到 45%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=45)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "dbb28d2a-5a82-4376-8220-e49340f57d90",
+    "intent_name": "CheckBatteryHealth",
+    "intent_description": "检查电池健康状态",
+    "slots": [],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "检查电池健康"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryHealth()"
+      },
+      {
+        "role": "tool",
+        "tool_name": "CheckBatteryHealth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "47f0f88f-450d-4a91-918d-399447a13857",
+    "intent_name": "ConnectBlueTooth",
+    "intent_description": "连接或断开蓝牙设备",
+    "slots": [
+      "DeviceType",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我把音箱蓝牙连上"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"音箱\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectBlueTooth",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "364e30b3-c269-4f20-9470-e7ad7c375d16",
+    "intent_name": "SetPowerMode",
+    "intent_description": "设置电源模式",
+    "slots": [
+      "Mode"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "开启 平衡 电源模式"
+      },
+      {
+        "role": "assistant",
+        "content": "SetPowerMode(Mode=\"平衡\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetPowerMode",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "a523c1f1-e8a3-4507-bfc4-c65ffa0bcb2a",
+    "intent_name": "AdjustVolume",
+    "intent_description": "调整音量大小",
+    "slots": [
+      "VolumeLevel"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "音量降低到 93%"
+      },
+      {
+        "role": "assistant",
+        "content": "AdjustVolume(VolumeLevel=93)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "AdjustVolume",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "7dfb0fdb-67ae-476a-8c6a-1a6df477f023",
+    "intent_name": "SetNotification",
+    "intent_description": "通知管理",
+    "slots": [
+      "AppName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "开启 QQ 通知"
+      },
+      {
+        "role": "assistant",
+        "content": "SetNotification(AppName=\"QQ\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetNotification",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "7ef7e6c5-7dc6-45f3-a812-ca5964da4b03",
+    "intent_name": "SetAppPermission",
+    "intent_description": "设置应用权限",
+    "slots": [
+      "AppName",
+      "Permission",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "禁止 日历 使用 位置"
+      },
+      {
+        "role": "assistant",
+        "content": "SetAppPermission(AppName=\"日历\", Permission=\"位置\", ActionType=True)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetAppPermission",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "76386b5d-b7fc-4a84-866f-a181dc59dfb8",
+    "intent_name": "SetNotification",
+    "intent_description": "通知管理",
+    "slots": [
+      "AppName",
+      "ActionType"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "开启 音乐 通知"
+      },
+      {
+        "role": "assistant",
+        "content": "SetNotification(AppName=\"音乐\", ActionType=False)"
+      },
+      {
+        "role": "tool",
+        "tool_name": "SetNotification",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "6a82cbe8-3164-4653-b9b0-e58d54a183d6",
+    "intent_name": "ConnectWiFi",
+    "intent_description": "连接指定 WiFi",
+    "slots": [
+      "SSID",
+      "Password"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "帮我连接WiFi OfficeWiFi"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectWiFi(SSID=\"OfficeWiFi\", Password=\"12379610\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "ConnectWiFi",
+        "reply": "工具执行成功"
+      }
+    ]
+  },
+  {
+    "id": "f46b6717-b2ad-4eef-9978-3c9d13bbb75b",
+    "intent_name": "OpenApp",
+    "intent_description": "打开应用",
+    "slots": [
+      "AppName"
+    ],
+    "category_Level1": "示例一级分类",
+    "category_Level2": "示例二级分类",
+    "category_Level3": "示例三级分类",
+    "data": [
+      {
+        "role": "user",
+        "content": "打开 邮件"
+      },
+      {
+        "role": "assistant",
+        "content": "OpenApp(AppName=\"邮件\")"
+      },
+      {
+        "role": "tool",
+        "tool_name": "OpenApp",
+        "reply": "工具执行成功"
+      }
+    ]
+  }
+]
